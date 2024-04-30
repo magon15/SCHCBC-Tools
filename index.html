@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/general.css" rel="stylesheet" />
+    <link href="./css/mtm-schedule.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script defer type="module" src="js/controller/controller.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SCHCBC Tools</title>
+    <link rel="icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <div class="viewport">
+      <nav class="nav">
+        <div class="church-inf">
+          <img
+            src="img/favicon.png"
+            alt="SCHCBC Church App Icon"
+            class="church-icon"
+          />
+          <p class="church-name">SCHCBC Tools</p>
+        </div>
+        <button class="nav-btn">
+          <img src="img/mtm-schedules.png" class="nav-icon" />
+          <p class="nav-btn-text">MTM Schedule Generator</p>
+        </button>
+        <button class="nav-btn">
+          <img src="img/ew-verses.png" class="nav-icon" />
+          <p class="nav-btn-text">EasyWorship Verses</p>
+        </button>
+      </nav>
+      <main class="mtm-schedule-view">
+        <form class="input-form mtm-sched-form">
+          <input
+            type="text"
+            class="txt-last-verse text-input"
+            placeholder="Enter last Bible verse"
+          />
+          <input type="date" class="mtm-sched-start-date" />
+          <div class="books-container">
+            <!-- <div class="checkbox-container">
+              <input type="checkbox" id="checkbox-genesis" />
+              <label for="checkbox-genesis">Genesis</label>
+            </div> -->
+          </div>
+          <ol class="book-selection-container">
+            <!-- <li class="book-select">Exodus</li> -->
+          </ol>
+          <button class="btn-generate button-full">Generate</button>
+        </form>
+        <div class="spinner-container hidden">
+          <img src="img/loading.png" class="spinner" />
+          <p class="spinner-text">Generating...</p>
+        </div>
+      </main>
+    </div>
+    <div class="schedule-container" id="schedule-container">
+      <img src="img/mtm-schedule-bg.jpg" class="schedule-bg" />
+      <p class="text-date-schedule">(April 15-21, 2024)</p>
+      <div class="mtm-schedule-daily-container">
+        <p class="text-mtm-for-day">April 15 - Judges 2:1-15</p>
+        <p class="text-mtm-for-day">April 15 - Judges 2:1-15</p>
+        <p class="text-mtm-for-day">April 15 - Judges 2:1-15</p>
+        <p class="text-mtm-for-day">April 15 - Judges 2:1-15</p>
+        <p class="text-mtm-for-day">April 15 - Judges 2:1-15</p>
+        <p class="text-mtm-for-day">April 15 - Judges 2:1-15</p>
+        <p class="text-mtm-for-day">April 15 - Judges 2:1-15</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.church-inf {
+  font-size: 1.6rem;
+  display: flex;
+  color: white;
+  font-weight: 500;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.6rem 1.6rem 2rem 1.6rem;
+}
+
+.church-icon {
+  height: 3.4rem;
+  aspect-ratio: 1/1;
+}

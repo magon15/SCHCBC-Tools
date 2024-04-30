@@ -1,0 +1,92 @@
+.mtm-schedule-view {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mtm-sched-form {
+  width: 100%;
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.books-container {
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.txt-last-verse {
+  grid-column: 1/-1;
+}
+
+.mtm-sched-start-date {
+  grid-column: 1/-1;
+}
+
+.btn-generate {
+  grid-column: 1/-1;
+}
+
+.book-selection-container {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 17rem;
+}
+
+.book-select {
+  margin: 1rem;
+}
+
+.schedule-container {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.text-date-schedule {
+  color: white;
+  width: 1920px;
+  position: absolute;
+  top: 308px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.mtm-schedule-daily-container {
+  width: 1920px;
+  position: absolute;
+  top: 436px;
+}
+
+.text-mtm-for-day {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.schedule-bg {
+  z-index: -1;
+}
