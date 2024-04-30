@@ -1,9 +1,5 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
 import * as model from "../model/model.js";
-import { async } from "regenerator-runtime";
 import * as helper from "../helpers.js";
-
 import mtmScheduleView from "../view/mtmScheduleView";
 
 const handleGenerateSchedule = async function (lastVerse, dateStart) {

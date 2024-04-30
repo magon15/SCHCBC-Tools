@@ -1,6 +1,3 @@
-import "core-js/stable";
-import dayjs from "dayjs";
-
 import View from "./View.js";
 
 import { bibleBooks } from "../constants.js";
