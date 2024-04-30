@@ -46,11 +46,13 @@ body {
   cursor: pointer;
 }
 
-.nav-btn:hover .nav-icon .nav-btn-selected {
+.nav-btn:hover .nav-icon,
+.nav-btn-selected .nav-icon {
   width: 1.75rem;
 }
 
-.nav-btn:hover .nav-btn-text .nav-btn-selected {
+.nav-btn:hover .nav-btn-text,
+.nav-btn-selected .nav-btn-text {
   font-weight: 700;
 }
 
