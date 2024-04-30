@@ -41,19 +41,24 @@
           <img src="img/mtm-schedules.png" class="nav-icon" />
           <p class="nav-btn-text">MTM Schedule Generator</p>
         </button>
-        <button class="nav-btn">
+        <button class="nav-btn nav-btn-selected">
           <img src="img/ew-verses.png" class="nav-icon" />
           <p class="nav-btn-text">EasyWorship Verses</p>
         </button>
       </nav>
       <main class="mtm-schedule-view">
         <form class="input-form mtm-sched-form">
+          <p class="mtm-helper-text">Enter last Bible verse</p>
           <input
             type="text"
             class="txt-last-verse text-input"
             placeholder="Enter last Bible verse"
           />
+          <div class="mtm-space"></div>
+          <p class="mtm-helper-text">Enter start date:</p>
           <input type="date" class="mtm-sched-start-date" />
+          <div class="mtm-space"></div>
+          <p class="mtm-helper-text">Enter books</p>
           <div class="books-container">
             <!-- <div class="checkbox-container">
               <input type="checkbox" id="checkbox-genesis" />
@@ -63,6 +68,7 @@
           <ol class="book-selection-container">
             <!-- <li class="book-select">Exodus</li> -->
           </ol>
+          <div class="mtm-space"></div>
           <button class="btn-generate button-full">Generate</button>
         </form>
         <div class="spinner-container hidden">

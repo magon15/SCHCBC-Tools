@@ -38,18 +38,19 @@ body {
   border: none;
 }
 
-.nav-btn:hover {
+.nav-btn:hover,
+.nav-btn-selected {
   background-color: #439c70;
   border-left: 0.3rem solid #fff;
   padding: 1rem 1.4rem;
   cursor: pointer;
 }
 
-.nav-btn:hover .nav-icon {
+.nav-btn:hover .nav-icon .nav-btn-selected {
   width: 1.75rem;
 }
 
-.nav-btn:hover .nav-btn-text {
+.nav-btn:hover .nav-btn-text .nav-btn-selected {
   font-weight: 700;
 }
 
